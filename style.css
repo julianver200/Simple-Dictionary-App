@@ -67,7 +67,8 @@ main{
     background-color: transparent;
     color: #1f194c;
     border: none;
-    margin-right: 10px;
+    margin-top: 7px;
+    margin-right: 15px;
    font-size: 19px;
    cursor: pointer;
 }
@@ -100,3 +101,28 @@ main{
     margin-left: 20px;
 }
 
+
+
+#searchButton:hover
+ {
+    
+ 
+ box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color: rgba(0, 0, 0, 0.65);
+ 
+}
+
+#bottone5:hover {
+ transform: translateY(-1px);
+}
+
+#searchButton:active {
+ background-color: blue;
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+ color: rgba(0, 0, 0, 0.65);
+ transform: translateY(0);
+}
+.result button:hover{
+    font-size: 20px;
+}
