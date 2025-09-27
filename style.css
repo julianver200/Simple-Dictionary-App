@@ -15,12 +15,15 @@ main{
     height: 100vh;   
 }
 .container {
+    width: 390px;        /* fixed width */
+  height: 250px;
   padding: 80px 60px;
   border-radius: 10px;
   background: rgb(255, 255, 255);
  text-align: center;
  position: absolute;
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ max-width: 450px;
 }
 .searchBar {
     width: 100%;
@@ -49,7 +52,12 @@ main{
     
 }
 .result{
+    width: 375px;        /* fixed width */
+    height: 200px;
     position: relative;
+    margin-left: 5px;
+    text-align: justify;
+    overflow-y: scroll;
 }
 .result h3{
     font-size: 30px;
@@ -59,6 +67,7 @@ main{
     background-color: transparent;
     color: #1f194c;
     border: none;
+    margin-right: 10px;
    font-size: 19px;
    cursor: pointer;
 }
@@ -73,3 +82,21 @@ main{
     margin-top: 10px;
     gap: 8px;
 }
+.wordMeaning,
+.wordExample {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%; /* prevent going outside the box */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.wordExample{
+    margin-top: 25px;
+    font-size: smaller;
+    padding-left: 25px;
+    border-left: 5px solid #000003;
+    margin-left: 20px;
+}
+
