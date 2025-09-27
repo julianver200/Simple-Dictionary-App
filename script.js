@@ -11,7 +11,11 @@ const fetchWord = async() =>{
 
         const response = await fetch(`${url}${input}`);
         if (!response.ok) {
-            throw new Error(`There is no such Word as "${input}"`);
+            if (response.status === 404) {
+                throw new Error(`❌ No definition found for "${wordInput}". Please try another word.`);
+            } else {
+                throw new Error(`⚠️ Something went wrong. Error code: ${response.status}`);
+      }
         }
 
         const data = await response.json();
